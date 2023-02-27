@@ -1,0 +1,31 @@
+# DEEPSORT:
+#   MODEL_TYPE: "osnet_x_25"
+#   MAX_DIST: 0.3 # The matching threshold. Samples with larger distance are considered an invalid match
+#   MAX_IOU_DISTANCE: 0.6 # Gating threshold. Associations with cost larger than this value are disregarded.
+#   MAX_AGE: 30 # Maximum number of missed misses before a track is deleted
+#   N_INIT: 3 # Number of frames that a track remains in initialization phase
+#   NN_BUDGET: 70 # Maximum size of the appearance descriptors gallery
+  
+# DEEPSORT:
+#   MODEL_TYPE: "osnet_x_25"
+#   MAX_DIST: 0.7 # The matching threshold. Samples with larger distance are considered an invalid match
+#   MAX_IOU_DISTANCE: 0.7 # Gating threshold. Associations with cost larger than this value are disregarded.
+#   MAX_AGE: 150 # Maximum number of missed misses before a track is deleted
+#   N_INIT: 3 # Number of frames that a track remains in initialization phase
+#   NN_BUDGET: 5000 # Maximum size of the appearance descriptors gallery
+#   MIN_CONFIDENCE: 0.15
+#   NMS_MAX_OVERLAP: 0.25
+
+
+DEEPSORT:
+  MODEL_TYPE: "densenet121"
+  MAX_DIST: 0.98 # The matching threshold. Samples with larger distance are considered an invalid match
+  MAX_IOU_DISTANCE: 0.98 # Gating threshold. Associations with cost larger than this value are disregarded.
+  MAX_AGE: 60 # Maximum number of missed misses before a track is deleted
+  N_INIT: 0 # Number of frames that a track remains in initialization phase
+  NN_BUDGET: 1000 # Maximum size of the appearance descriptors gallery
+  MIN_CONFIDENCE: 0.2
+  NMS_MAX_OVERLAP: 0.1
+  
+
+

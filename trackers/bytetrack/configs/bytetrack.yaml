@@ -1,0 +1,6 @@
+bytetrack:
+  track_thresh: 0.7  # tracking confidence threshold
+  track_buffer: 30   # the frames for keep lost tracks
+  match_thresh: 0.9  # matching threshold for tracking
+  frame_rate: 60     # FPS
+  

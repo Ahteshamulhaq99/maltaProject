@@ -1,0 +1,12 @@
+    tracking_method = 'bytetrack'
+    tracking_config="trackers/bytetrack/configs/bytetrack.yaml"
+    reid_weights= 'osnet_x0_25_msmt17.pt'
+    half=False
+
+    byteTracker = create_tracker(tracking_method, tracking_config, reid_weights, device, half)
+
+
+
+
+
+tracked = byteTracker.update(torch.as_tensor(np.array(boxes)), img)
